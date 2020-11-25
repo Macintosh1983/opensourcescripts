@@ -1,0 +1,686 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local RBLXTROLL = Instance.new("ScreenGui")
+local mainframe = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local close = Instance.new("TextButton")
+local Scripts = Instance.new("TextButton")
+local page1 = Instance.new("Frame")
+local Burn = Instance.new("TextButton")
+local cmd = Instance.new("TextButton")
+local HeadSpammer = Instance.new("TextButton")
+local Grab = Instance.new("TextButton")
+local anchor = Instance.new("TextButton")
+local Fling = Instance.new("TextButton")
+local Rainbow = Instance.new("TextButton")
+local RainbowCar = Instance.new("TextButton")
+local CLUB = Instance.new("TextButton")
+local GEAR = Instance.new("TextButton")
+local Teleports = Instance.new("TextButton")
+local page2 = Instance.new("Frame")
+local Front = Instance.new("TextButton")
+local ClubRed = Instance.new("TextButton")
+local Mall = Instance.new("TextButton")
+local Forest = Instance.new("TextButton")
+local Beach = Instance.new("TextButton")
+local Secret = Instance.new("TextButton")
+local TextLabel_2 = Instance.new("TextLabel")
+local Player = Instance.new("TextButton")
+local page3 = Instance.new("Frame")
+local SPEED = Instance.new("TextBox")
+local JUMP = Instance.new("TextBox")
+local SETSPEED = Instance.new("TextButton")
+local SETJUMP = Instance.new("TextButton")
+local TextLabel_3 = Instance.new("TextLabel")
+local TextLabel_4 = Instance.new("TextLabel")
+local CHAT = Instance.new("TextBox")
+local TextLabel_5 = Instance.new("TextLabel")
+local CHATSPAM = Instance.new("TextButton")
+
+--Properties:
+
+RBLXTROLL.Name = "RBLXTROLL"
+RBLXTROLL.Parent = game.CoreGui
+RBLXTROLL.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+mainframe.Name = "mainframe"
+mainframe.Parent = RBLXTROLL
+mainframe.BackgroundColor3 = Color3.fromRGB(1, 84, 249)
+mainframe.BackgroundTransparency = 0.350
+mainframe.Position = UDim2.new(0.20750989, 0, 0.168367341, 0)
+mainframe.Size = UDim2.new(0, 277, 0, 53)
+mainframe.Visible = false
+
+TextLabel.Parent = mainframe
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Size = UDim2.new(0, 249, 0, 27)
+TextLabel.Font = Enum.Font.ArialBold
+TextLabel.Text = "RBLX HIGH TROLL GUI V.4"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextSize = 18.000
+TextLabel.TextStrokeTransparency = 0.000
+
+close.Name = "close"
+close.Parent = mainframe
+close.BackgroundColor3 = Color3.fromRGB(155, 187, 252)
+close.Position = UDim2.new(0.901795566, 0, -0.000307351351, 0)
+close.Size = UDim2.new(0, 27, 0, 27)
+close.Font = Enum.Font.ArialBold
+close.Text = "X"
+close.TextColor3 = Color3.fromRGB(255, 0, 4)
+close.TextSize = 18.000
+close.MouseButton1Down:connect(function()
+mainframe.Visible = false
+end)
+
+Scripts.Name = "Scripts"
+Scripts.Parent = mainframe
+Scripts.BackgroundColor3 = Color3.fromRGB(155, 187, 252)
+Scripts.BackgroundTransparency = 0.350
+Scripts.Position = UDim2.new(0, 0, 0.679245293, 0)
+Scripts.Size = UDim2.new(0, 94, 0, 17)
+Scripts.Font = Enum.Font.GothamSemibold
+Scripts.Text = "Scripts"
+Scripts.TextColor3 = Color3.fromRGB(255, 255, 255)
+Scripts.TextSize = 14.000
+Scripts.TextStrokeTransparency = 0.000
+Scripts.MouseButton1Down:connect(function()
+page1.Visible = true
+page2.Visible = false
+page3.Visible = false
+end)
+
+page1.Name = "page1"
+page1.Parent = Scripts
+page1.BackgroundColor3 = Color3.fromRGB(1, 84, 249)
+page1.BackgroundTransparency = 0.350
+page1.Position = UDim2.new(0, 0, 1, 0)
+page1.Size = UDim2.new(0, 276, 0, 265)
+
+Burn.Name = "Burn"
+Burn.Parent = page1
+Burn.BackgroundColor3 = Color3.fromRGB(255, 255, 53)
+Burn.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Burn.Position = UDim2.new(0.0217391308, 0, 0.0490566045, 0)
+Burn.Size = UDim2.new(0, 126, 0, 37)
+Burn.Font = Enum.Font.ArialBold
+Burn.Text = "Burn People"
+Burn.TextColor3 = Color3.fromRGB(255, 255, 255)
+Burn.TextSize = 16.000
+Burn.TextStrokeTransparency = 0.000
+Burn.MouseButton1Down:connect(function()
+loadstring(game:HttpGet("https://paste.ee/r/e6MVW", true))()
+end)
+
+cmd.Name = "cmd"
+cmd.Parent = page1
+cmd.BackgroundColor3 = Color3.fromRGB(255, 255, 53)
+cmd.BorderColor3 = Color3.fromRGB(0, 0, 0)
+cmd.Position = UDim2.new(0.521739125, 0, 0.0490566045, 0)
+cmd.Size = UDim2.new(0, 126, 0, 37)
+cmd.Font = Enum.Font.ArialBold
+cmd.Text = "CMD X"
+cmd.TextColor3 = Color3.fromRGB(255, 255, 255)
+cmd.TextSize = 16.000
+cmd.TextStrokeTransparency = 0.000
+cmd.MouseButton1Down:connect(function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source", true))()
+end)
+
+HeadSpammer.Name = "HeadSpammer"
+HeadSpammer.Parent = page1
+HeadSpammer.BackgroundColor3 = Color3.fromRGB(255, 255, 53)
+HeadSpammer.BorderColor3 = Color3.fromRGB(0, 0, 0)
+HeadSpammer.Position = UDim2.new(0.0217391308, 0, 0.215094343, 0)
+HeadSpammer.Size = UDim2.new(0, 126, 0, 37)
+HeadSpammer.Font = Enum.Font.ArialBold
+HeadSpammer.Text = "Head Spam"
+HeadSpammer.TextColor3 = Color3.fromRGB(255, 255, 255)
+HeadSpammer.TextSize = 16.000
+HeadSpammer.TextStrokeTransparency = 0.000
+HeadSpammer.MouseButton1Down:connect(function()
+loadstring(game:HttpGet("https://pastebin.com/raw/mPMkzqXC", true))()
+local NameChangerRequest = game:GetService("ReplicatedStorage").RemoteFunctions.NameChangerRequest
+end)
+
+Grab.Name = "Grab"
+Grab.Parent = page1
+Grab.BackgroundColor3 = Color3.fromRGB(255, 255, 53)
+Grab.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Grab.Position = UDim2.new(0.0217391308, 0, 0.381132066, 0)
+Grab.Size = UDim2.new(0, 126, 0, 37)
+Grab.Font = Enum.Font.ArialBold
+Grab.Text = "Grab Cars/Unanchored"
+Grab.TextColor3 = Color3.fromRGB(255, 255, 255)
+Grab.TextSize = 16.000
+Grab.TextStrokeTransparency = 0.000
+Grab.TextWrapped = true
+Grab.MouseButton1Down:connect(function()
+loadstring(game:HttpGet("https://pastebin.com/raw/RrfNcQEk", true))()
+end)
+
+anchor.Name = "anchor"
+anchor.Parent = page1
+anchor.BackgroundColor3 = Color3.fromRGB(255, 255, 53)
+anchor.BorderColor3 = Color3.fromRGB(0, 0, 0)
+anchor.Position = UDim2.new(0.521739125, 0, 0.215094343, 0)
+anchor.Size = UDim2.new(0, 126, 0, 37)
+anchor.Font = Enum.Font.ArialBold
+anchor.Text = "Bring Unanchored"
+anchor.TextColor3 = Color3.fromRGB(255, 255, 255)
+anchor.TextSize = 16.000
+anchor.TextStrokeTransparency = 0.000
+anchor.TextWrapped = true
+anchor.MouseButton1Down:connect(function()
+loadstring(game:HttpGet("https://pastebin.com/raw/VRxFFXQt", true))()
+end)
+
+Fling.Name = "Fling"
+Fling.Parent = page1
+Fling.BackgroundColor3 = Color3.fromRGB(255, 255, 53)
+Fling.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Fling.Position = UDim2.new(0.521739125, 0, 0.381132066, 0)
+Fling.Size = UDim2.new(0, 126, 0, 37)
+Fling.Font = Enum.Font.ArialBold
+Fling.Text = "Fe Fling"
+Fling.TextColor3 = Color3.fromRGB(255, 255, 255)
+Fling.TextSize = 16.000
+Fling.TextStrokeTransparency = 0.000
+Fling.MouseButton1Down:connect(function()
+loadstring(game:HttpGet("https://paste.ee/r/5B8Xk", true))()
+end)
+
+Rainbow.Name = "Rainbow"
+Rainbow.Parent = page1
+Rainbow.BackgroundColor3 = Color3.fromRGB(255, 255, 53)
+Rainbow.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Rainbow.Position = UDim2.new(0.521739125, 0, 0.562264144, 0)
+Rainbow.Size = UDim2.new(0, 126, 0, 37)
+Rainbow.Font = Enum.Font.ArialBold
+Rainbow.Text = "Rainbow Name"
+Rainbow.TextColor3 = Color3.fromRGB(255, 255, 255)
+Rainbow.TextSize = 16.000
+Rainbow.TextStrokeTransparency = 0.000
+Rainbow.MouseButton1Down:connect(function()
+while wait() do
+		for i,v in pairs(game.Teams:GetChildren()) do
+	    	if v.Name == "Principal" then wait() else wait()
+				game:GetService("ReplicatedStorage").RemoteFunctions.ChangeTeam:FireServer(v.Name);
+			end
+		end
+		end
+end)
+
+RainbowCar.Name = "RainbowCar"
+RainbowCar.Parent = page1
+RainbowCar.BackgroundColor3 = Color3.fromRGB(255, 255, 53)
+RainbowCar.BorderColor3 = Color3.fromRGB(0, 0, 0)
+RainbowCar.Position = UDim2.new(0.0217391253, 0, 0.562264144, 0)
+RainbowCar.Size = UDim2.new(0, 126, 0, 37)
+RainbowCar.Font = Enum.Font.ArialBold
+RainbowCar.Text = "Rainbow Car"
+RainbowCar.TextColor3 = Color3.fromRGB(255, 255, 255)
+RainbowCar.TextSize = 16.000
+RainbowCar.TextStrokeTransparency = 0.000
+RainbowCar.MouseButton1Down:connect(function()
+while wait() do
+			for i = 21,25 do wait()
+				game:GetService("ReplicatedStorage").RemoteFunctions.ApplySelectedPaint:FireServer(i);
+			end
+		end
+end)
+
+CLUB.Name = "CLUB"
+CLUB.Parent = page1
+CLUB.BackgroundColor3 = Color3.fromRGB(255, 255, 53)
+CLUB.Position = UDim2.new(0.0201825127, 0, 0.747169793, 0)
+CLUB.Size = UDim2.new(0, 126, 0, 37)
+CLUB.Font = Enum.Font.ArialBold
+CLUB.Text = "CLUB RED SHOP"
+CLUB.TextColor3 = Color3.fromRGB(255, 255, 255)
+CLUB.TextSize = 16.000
+CLUB.TextStrokeTransparency = 0.000
+CLUB.TextWrapped = true
+CLUB.MouseButton1Down:connect(function()
+local RequestToLoadGui = game:GetService("ReplicatedStorage").RemoteFunctions.RequestToLoadGui
+RequestToLoadGui:Fire(
+	"ShopGui",
+	"Club Red"
+)
+end)
+
+GEAR.Name = "GEAR"
+GEAR.Parent = page1
+GEAR.BackgroundColor3 = Color3.fromRGB(255, 255, 53)
+GEAR.Position = UDim2.new(0.521647573, 0, 0.747169852, 0)
+GEAR.Size = UDim2.new(0, 126, 0, 37)
+GEAR.Font = Enum.Font.ArialBold
+GEAR.Text = "GEAR SHOP"
+GEAR.TextColor3 = Color3.fromRGB(255, 255, 255)
+GEAR.TextSize = 16.000
+GEAR.TextStrokeTransparency = 0.000
+GEAR.MouseButton1Down:connect(function()
+local LoadLocalGui = game:GetService("ReplicatedStorage").RemoteFunctions.LoadLocalGui
+LoadLocalGui:Fire(
+	"PermanentShopGui",
+	"Archaeic's Gear Shop",
+	"gear"
+)
+end)
+
+Teleports.Name = "Teleports"
+Teleports.Parent = mainframe
+Teleports.BackgroundColor3 = Color3.fromRGB(155, 187, 252)
+Teleports.BackgroundTransparency = 0.350
+Teleports.Position = UDim2.new(0.339350194, 0, 0.679245293, 0)
+Teleports.Size = UDim2.new(0, 94, 0, 17)
+Teleports.Font = Enum.Font.GothamSemibold
+Teleports.Text = "Teleports"
+Teleports.TextColor3 = Color3.fromRGB(255, 255, 255)
+Teleports.TextSize = 14.000
+Teleports.TextStrokeTransparency = 0.000
+Teleports.MouseButton1Down:connect(function()
+page1.Visible = false
+page2.Visible = true
+page3.Visible = false
+end)
+
+page2.Name = "page2"
+page2.Parent = Teleports
+page2.BackgroundColor3 = Color3.fromRGB(1, 84, 249)
+page2.BackgroundTransparency = 0.350
+page2.Position = UDim2.new(-1, 0, 1, 0)
+page2.Size = UDim2.new(0, 277, 0, 265)
+page2.Visible = false
+
+Front.Name = "Front"
+Front.Parent = page2
+Front.BackgroundColor3 = Color3.fromRGB(255, 255, 53)
+Front.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Front.Position = UDim2.new(0.0217391308, 0, 0.0490566045, 0)
+Front.Size = UDim2.new(0, 126, 0, 37)
+Front.Font = Enum.Font.ArialBold
+Front.Text = "Front of school"
+Front.TextColor3 = Color3.fromRGB(255, 255, 255)
+Front.TextSize = 16.000
+Front.TextStrokeTransparency = 0.000
+Front.MouseButton1Down:connect(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-834.613098, 219.5, 712.799622)
+end)
+
+ClubRed.Name = "ClubRed"
+ClubRed.Parent = page2
+ClubRed.BackgroundColor3 = Color3.fromRGB(255, 255, 53)
+ClubRed.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ClubRed.Position = UDim2.new(0.51271385, 0, 0.0490566045, 0)
+ClubRed.Size = UDim2.new(0, 126, 0, 37)
+ClubRed.Font = Enum.Font.ArialBold
+ClubRed.Text = "Club Red"
+ClubRed.TextColor3 = Color3.fromRGB(255, 255, 255)
+ClubRed.TextSize = 16.000
+ClubRed.TextStrokeTransparency = 0.000
+ClubRed.MouseButton1Down:connect(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-390.694336, 220.097977, 317.194489)
+end)
+
+Mall.Name = "Mall"
+Mall.Parent = page2
+Mall.BackgroundColor3 = Color3.fromRGB(255, 255, 53)
+Mall.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Mall.Position = UDim2.new(0.0217391234, 0, 0.226415098, 0)
+Mall.Size = UDim2.new(0, 126, 0, 37)
+Mall.Font = Enum.Font.ArialBold
+Mall.Text = "Mall"
+Mall.TextColor3 = Color3.fromRGB(255, 255, 255)
+Mall.TextSize = 16.000
+Mall.TextStrokeTransparency = 0.000
+Mall.MouseButton1Down:connect(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(13.7605791, 220.098007, 1319.86023)
+end)
+
+Forest.Name = "Forest"
+Forest.Parent = page2
+Forest.BackgroundColor3 = Color3.fromRGB(255, 255, 53)
+Forest.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Forest.Position = UDim2.new(0.51271385, 0, 0.226415098, 0)
+Forest.Size = UDim2.new(0, 126, 0, 37)
+Forest.Font = Enum.Font.ArialBold
+Forest.Text = "Forest"
+Forest.TextColor3 = Color3.fromRGB(255, 255, 255)
+Forest.TextSize = 16.000
+Forest.TextStrokeTransparency = 0.000
+Forest.MouseButton1Down:connect(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1151.62854, 219.339996, 1605.90027)
+end)
+
+Beach.Name = "Beach"
+Beach.Parent = page2
+Beach.BackgroundColor3 = Color3.fromRGB(255, 255, 53)
+Beach.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Beach.Position = UDim2.new(0.0217391253, 0, 0.430188686, 0)
+Beach.Size = UDim2.new(0, 126, 0, 37)
+Beach.Font = Enum.Font.ArialBold
+Beach.Text = "Beach"
+Beach.TextColor3 = Color3.fromRGB(255, 255, 255)
+Beach.TextSize = 16.000
+Beach.TextStrokeTransparency = 0.000
+Beach.MouseButton1Down:connect(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1763.96265, 221.098007, 831.7724)
+end)
+
+Secret.Name = "Secret"
+Secret.Parent = page2
+Secret.BackgroundColor3 = Color3.fromRGB(255, 255, 53)
+Secret.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Secret.Position = UDim2.new(0.51271385, 0, 0.430188686, 0)
+Secret.Size = UDim2.new(0, 126, 0, 37)
+Secret.Font = Enum.Font.ArialBold
+Secret.Text = "Secret mine"
+Secret.TextColor3 = Color3.fromRGB(255, 255, 255)
+Secret.TextSize = 16.000
+Secret.TextStrokeTransparency = 0.000
+Secret.MouseButton1Down:connect(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1657.65747, 195.874451, 373.436401)
+end)
+
+TextLabel_2.Parent = page2
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.060
+TextLabel_2.Position = UDim2.new(0.148014441, 0, 0.935849071, 0)
+TextLabel_2.Size = UDim2.new(0, 200, 0, 17)
+TextLabel_2.Font = Enum.Font.ArialBold
+TextLabel_2.Text = "https://discord.gg/8gt6mqr"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextSize = 13.000
+TextLabel_2.TextStrokeTransparency = 0.000
+
+Player.Name = "Player"
+Player.Parent = mainframe
+Player.BackgroundColor3 = Color3.fromRGB(155, 187, 252)
+Player.BackgroundTransparency = 0.350
+Player.Position = UDim2.new(0.678700387, 0, 0.679245293, 0)
+Player.Size = UDim2.new(0, 88, 0, 17)
+Player.Font = Enum.Font.GothamSemibold
+Player.Text = "Player"
+Player.TextColor3 = Color3.fromRGB(255, 255, 255)
+Player.TextSize = 14.000
+Player.TextStrokeTransparency = 0.000
+Player.MouseButton1Down:connect(function()
+page1.Visible = false
+page2.Visible = false
+page3.Visible = true
+end)
+
+page3.Name = "page3"
+page3.Parent = Player
+page3.BackgroundColor3 = Color3.fromRGB(1, 84, 249)
+page3.BackgroundTransparency = 0.350
+page3.Position = UDim2.new(-2.13636374, 0, 1, 0)
+page3.Size = UDim2.new(0, 277, 0, 265)
+page3.Visible = false
+
+SPEED.Name = "SPEED"
+SPEED.Parent = page3
+SPEED.BackgroundColor3 = Color3.fromRGB(0, 13, 39)
+SPEED.BackgroundTransparency = 0.600
+SPEED.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SPEED.BorderSizePixel = 3
+SPEED.Position = UDim2.new(0.0252707582, 0, 0.113207549, 0)
+SPEED.Size = UDim2.new(0, 112, 0, 25)
+SPEED.Font = Enum.Font.ArialBold
+SPEED.PlaceholderColor3 = Color3.fromRGB(255, 255, 255)
+SPEED.Text = ""
+SPEED.TextColor3 = Color3.fromRGB(255, 255, 255)
+SPEED.TextSize = 14.000
+SPEED.TextStrokeTransparency = 0.000
+SPEED.TextWrapped = true
+
+JUMP.Name = "JUMP"
+JUMP.Parent = page3
+JUMP.BackgroundColor3 = Color3.fromRGB(0, 13, 39)
+JUMP.BackgroundTransparency = 0.600
+JUMP.BorderColor3 = Color3.fromRGB(0, 0, 0)
+JUMP.BorderSizePixel = 3
+JUMP.Position = UDim2.new(0.0252707582, 0, 0.328301907, 0)
+JUMP.Size = UDim2.new(0, 112, 0, 25)
+JUMP.Font = Enum.Font.ArialBold
+JUMP.PlaceholderColor3 = Color3.fromRGB(255, 255, 255)
+JUMP.Text = ""
+JUMP.TextColor3 = Color3.fromRGB(255, 255, 255)
+JUMP.TextSize = 14.000
+JUMP.TextStrokeTransparency = 0.000
+JUMP.TextWrapped = true
+
+SETSPEED.Name = "SETSPEED"
+SETSPEED.Parent = page3
+SETSPEED.BackgroundColor3 = Color3.fromRGB(255, 255, 53)
+SETSPEED.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SETSPEED.Position = UDim2.new(0.476534307, 0, 0.113207549, 0)
+SETSPEED.Size = UDim2.new(0, 33, 0, 25)
+SETSPEED.Font = Enum.Font.ArialBold
+SETSPEED.Text = "SET"
+SETSPEED.TextColor3 = Color3.fromRGB(255, 255, 255)
+SETSPEED.TextSize = 14.000
+SETSPEED.TextStrokeTransparency = 0.000
+SETSPEED.MouseButton1Down:connect(function()
+_G.WS = SPEED.Text;
+				local Humanoid = game:GetService("Players").LocalPlayer.Character.Humanoid;--credit to @Matt_Lawz#2170 
+				Humanoid:GetPropertyChangedSignal("WalkSpeed"):Connect(function()
+				Humanoid.WalkSpeed = _G.WS;
+				end)
+				Humanoid.WalkSpeed = _G.WS;
+end)
+
+SETJUMP.Name = "SETJUMP"
+SETJUMP.Parent = page3
+SETJUMP.BackgroundColor3 = Color3.fromRGB(255, 255, 53)
+SETJUMP.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SETJUMP.Position = UDim2.new(0.476534307, 0, 0.328301907, 0)
+SETJUMP.Size = UDim2.new(0, 33, 0, 25)
+SETJUMP.Font = Enum.Font.ArialBold
+SETJUMP.Text = "SET"
+SETJUMP.TextColor3 = Color3.fromRGB(255, 255, 255)
+SETJUMP.TextSize = 14.000
+SETJUMP.TextStrokeTransparency = 0.000
+SETJUMP.MouseButton1Down:connect(function()
+_G.WS = JUMP.Text;
+				local Humanoid = game:GetService("Players").LocalPlayer.Character.Humanoid;--credit to @Matt_Lawz#2170 
+				Humanoid:GetPropertyChangedSignal("JumpPower"):Connect(function()
+				Humanoid.JumpPower = _G.WS;
+				end)
+				Humanoid.JumpPower = _G.WS;
+end)
+
+TextLabel_3.Parent = page3
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.Position = UDim2.new(0.0252707582, 0, 0, 0)
+TextLabel_3.Size = UDim2.new(0, 112, 0, 30)
+TextLabel_3.Font = Enum.Font.ArialBold
+TextLabel_3.Text = "Speed"
+TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.TextSize = 14.000
+TextLabel_3.TextStrokeTransparency = 0.000
+
+TextLabel_4.Parent = page3
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.BackgroundTransparency = 1.000
+TextLabel_4.Position = UDim2.new(0.0252707582, 0, 0.207547173, 0)
+TextLabel_4.Size = UDim2.new(0, 112, 0, 30)
+TextLabel_4.Font = Enum.Font.ArialBold
+TextLabel_4.Text = "Jump"
+TextLabel_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.TextSize = 14.000
+TextLabel_4.TextStrokeTransparency = 0.000
+
+CHAT.Name = "CHAT"
+CHAT.Parent = page3
+CHAT.BackgroundColor3 = Color3.fromRGB(0, 13, 39)
+CHAT.BackgroundTransparency = 0.600
+CHAT.BorderColor3 = Color3.fromRGB(0, 0, 0)
+CHAT.BorderSizePixel = 3
+CHAT.Position = UDim2.new(0.0252707582, 0, 0.558490574, 0)
+CHAT.Size = UDim2.new(0, 112, 0, 25)
+CHAT.Font = Enum.Font.ArialBold
+CHAT.PlaceholderColor3 = Color3.fromRGB(255, 255, 255)
+CHAT.Text = ""
+CHAT.TextColor3 = Color3.fromRGB(255, 255, 255)
+CHAT.TextScaled = true
+CHAT.TextSize = 14.000
+CHAT.TextStrokeTransparency = 0.000
+CHAT.TextWrapped = true
+SETJUMP.MouseButton1Down:connect(function()
+_G.WS = JUMP.Text;
+				local Humanoid = game:GetService("Players").LocalPlayer.Character.Humanoid;--credit to @Matt_Lawz#2170 
+				Humanoid:GetPropertyChangedSignal("JumpPower"):Connect(function()
+				Humanoid.JumpPower = _G.WS;
+				end)
+				Humanoid.JumpPower = _G.WS;
+end)
+
+TextLabel_5.Parent = page3
+TextLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.BackgroundTransparency = 1.000
+TextLabel_5.Position = UDim2.new(0.0252707582, 0, 0.441509426, 0)
+TextLabel_5.Size = UDim2.new(0, 112, 0, 30)
+TextLabel_5.Font = Enum.Font.ArialBold
+TextLabel_5.Text = "Chat Spammer"
+TextLabel_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.TextSize = 14.000
+TextLabel_5.TextStrokeTransparency = 0.000
+
+CHATSPAM.Name = "CHATSPAM"
+CHATSPAM.Parent = page3
+CHATSPAM.BackgroundColor3 = Color3.fromRGB(255, 255, 53)
+CHATSPAM.BorderColor3 = Color3.fromRGB(0, 0, 0)
+CHATSPAM.Position = UDim2.new(0.476534307, 0, 0.558490574, 0)
+CHATSPAM.Size = UDim2.new(0, 43, 0, 25)
+CHATSPAM.Font = Enum.Font.ArialBold
+CHATSPAM.Text = "SPAM"
+CHATSPAM.TextColor3 = Color3.fromRGB(255, 255, 255)
+CHATSPAM.TextSize = 14.000
+CHATSPAM.TextStrokeTransparency = 0.000
+CHATSPAM.MouseButton1Down:connect(function()
+while true do
+   wait(1)
+local A_1 = CHAT.Text
+local A_2 = "All"
+local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
+Event:FireServer(A_1, A_2)
+end
+end)
+
+-- Scripts:
+
+local function AUEOCYQ_fake_script() -- mainframe.Drag 
+	local script = Instance.new('LocalScript', mainframe)
+
+	script.parent.Selectable = true
+	script.Parent.Active = true
+	script.parent.Draggable = true
+end
+coroutine.wrap(AUEOCYQ_fake_script)()
+local function LYQCY_fake_script() -- mainframe.OpenGui 
+	local script = Instance.new('LocalScript', mainframe)
+
+	game:GetService("UserInputService").InputBegan:Connect(function(input, gameProcessedEvent)
+	if input.KeyCode == Enum.KeyCode.E then
+	script.Parent.Visible = true--name of my gui frame
+	  end
+	end)
+end
+coroutine.wrap(LYQCY_fake_script)()
+local function SHXVVON_fake_script() -- Rainbow.Rainbower 
+	local script = Instance.new('LocalScript', Rainbow)
+
+	while wait() do
+		script.Parent.TextColor3 = Color3.new(1,0,0)
+		for i=1,15 do
+			game:GetService("RunService").RenderStepped:wait()
+			script.Parent.TextColor3 = Color3.new(script.Parent.TextColor3.r,script.Parent.TextColor3.g+(17/255),script.Parent.TextColor3.b)
+		end
+		for i=1,15 do
+			game:GetService("RunService").RenderStepped:wait()
+			script.Parent.TextColor3 = Color3.new(script.Parent.TextColor3.r-(17/255),script.Parent.TextColor3.g,script.Parent.TextColor3.b)
+		end
+		for i=1,15 do
+			game:GetService("RunService").RenderStepped:wait()
+			script.Parent.TextColor3 = Color3.new(script.Parent.TextColor3.r,script.Parent.TextColor3.g,script.Parent.TextColor3.b+(17/255))
+		end
+		for i=1,15 do
+			game:GetService("RunService").RenderStepped:wait()
+			script.Parent.TextColor3 = Color3.new(script.Parent.TextColor3.r,script.Parent.TextColor3.g-(17/255),script.Parent.TextColor3.b)
+		end
+		for i=1,15 do
+			game:GetService("RunService").RenderStepped:wait()
+			script.Parent.TextColor3 = Color3.new(script.Parent.TextColor3.r+(17/255),script.Parent.TextColor3.g,script.Parent.TextColor3.b)
+		end
+		for i=1,15 do
+			game:GetService("RunService").RenderStepped:wait()
+			script.Parent.TextColor3 = Color3.new(script.Parent.TextColor3.r,script.Parent.TextColor3.g,script.Parent.TextColor3.b-(17/255))
+		end
+	end
+end
+coroutine.wrap(SHXVVON_fake_script)()
+local function LBYLL_fake_script() -- RainbowCar.Rainbower 
+	local script = Instance.new('LocalScript', RainbowCar)
+
+	while wait() do
+		script.Parent.TextColor3 = Color3.new(1,0,0)
+		for i=1,15 do
+			game:GetService("RunService").RenderStepped:wait()
+			script.Parent.TextColor3 = Color3.new(script.Parent.TextColor3.r,script.Parent.TextColor3.g+(17/255),script.Parent.TextColor3.b)
+		end
+		for i=1,15 do
+			game:GetService("RunService").RenderStepped:wait()
+			script.Parent.TextColor3 = Color3.new(script.Parent.TextColor3.r-(17/255),script.Parent.TextColor3.g,script.Parent.TextColor3.b)
+		end
+		for i=1,15 do
+			game:GetService("RunService").RenderStepped:wait()
+			script.Parent.TextColor3 = Color3.new(script.Parent.TextColor3.r,script.Parent.TextColor3.g,script.Parent.TextColor3.b+(17/255))
+		end
+		for i=1,15 do
+			game:GetService("RunService").RenderStepped:wait()
+			script.Parent.TextColor3 = Color3.new(script.Parent.TextColor3.r,script.Parent.TextColor3.g-(17/255),script.Parent.TextColor3.b)
+		end
+		for i=1,15 do
+			game:GetService("RunService").RenderStepped:wait()
+			script.Parent.TextColor3 = Color3.new(script.Parent.TextColor3.r+(17/255),script.Parent.TextColor3.g,script.Parent.TextColor3.b)
+		end
+		for i=1,15 do
+			game:GetService("RunService").RenderStepped:wait()
+			script.Parent.TextColor3 = Color3.new(script.Parent.TextColor3.r,script.Parent.TextColor3.g,script.Parent.TextColor3.b-(17/255))
+		end
+	end
+end
+coroutine.wrap(LBYLL_fake_script)()
+local function VLZR_fake_script() -- mainframe.LocalScript 
+	local script = Instance.new('LocalScript', mainframe)
+
+	game:GetService("ReplicatedStorage").RemoteFunctions.LocalNotification:Fire("Gui made by chillin aka mac#7174");
+	wait(3)
+	game:GetService("ReplicatedStorage").RemoteFunctions.LocalNotification:Fire("Press E To Open Gui");
+	wait(3)
+	game:GetService("ReplicatedStorage").RemoteFunctions.LocalNotification:Fire("Remove RP name Before Executing RainbowName");
+	--Le Chillin Outfit
+	local WearOutfit = game:GetService("ReplicatedStorage").RemoteFunctions.WearOutfit
+	WearOutfit:InvokeServer(
+		{
+			["Hat3"] = "",
+			["Hat1"] = "191101707",
+			["RemoveShirt"] = false,
+			["Face"] = "180660043",
+			["Hat2"] = "",
+			["Shirt"] = "",
+			["Pants"] = "",
+			["RPDesc"] = "",
+			["RPName"] = "RIP",
+			["OutfitName"] = "CHILLINWUZHERE"
+		}
+	)
+end
+coroutine.wrap(VLZR_fake_script)()
